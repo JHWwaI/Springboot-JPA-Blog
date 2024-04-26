@@ -1,0 +1,17 @@
+server:
+  servlet:
+    jsp:
+      init-parameters:
+        development: true
+spring:
+  application:
+    name: blog
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul
+    username: cos
+    password: cos1234
